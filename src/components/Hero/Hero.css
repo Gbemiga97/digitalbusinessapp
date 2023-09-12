@@ -1,0 +1,156 @@
+.hero__wrapper{
+   background:  var(--primary-color);
+    height: 130vh;
+   
+   
+}
+
+.hero__wrapper .container{
+    padding-top: 8rem;
+}
+
+.hero__container{
+    display: grid;
+    grid-template-columns: 40% 50%;
+    gap: 5%;
+    place-items: center;
+    
+}
+.hero__content{
+    display: flex;
+    flex-direction: column;
+
+}
+
+.hero__content h1{
+    font-size: 4rem;
+    text-transform: uppercase;
+    font-weight: bolder;
+    color: var(--third-color);
+    line-height: 5.7rem;
+}
+
+.hero__content h1 span{
+    color: white;
+}
+
+.hero__content p{
+    color: white;
+    font-size: 1.2rem;
+    line-height: 1.7;
+    margin-bottom: 3rem;
+}
+
+
+
+.hero__imgs{
+    flex: 0.7;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    position: relative;
+    place-items: center;
+    padding-top: 4rem;
+}
+
+.img__pills{
+    height: 15rem;
+    width: 6rem;
+    overflow: hidden;
+    border-radius: 999px;
+}
+
+.img__pills-bg{
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    border-radius: 999px;
+}
+
+.img__pills-bg > img{
+    width: 100%;
+    object-fit: cover;
+    overflow: hidden;
+    margin-top: 4rem;
+    scale: 2;
+}
+
+.img__pills:nth-child(2),
+.img__pills:nth-child(5){
+   transform: translateY(-4rem);
+}
+
+
+.img__arrow{
+    position: absolute;
+    z-index: 0;
+    display: none;
+}
+
+
+
+
+
+            /* MEDIA QUERIES (medium screen) */
+
+@media screen and (max-width: 1024px) {
+  
+    .hero__container{
+       grid-template-columns: 100%;
+    }
+    .hero__imgs{
+        column-gap: 2rem;
+        flex: 0;
+    }
+
+    .hero__content{
+        align-items: center;
+        justify-content: center;
+       
+    }
+    .hero__content h1{
+        font-size: 2.2rem;
+        line-height: 3.6rem;
+        text-align: center;
+        width: 23rem;
+    }
+    .hero__content p{
+        font-size: 1rem;
+        width: 60%;
+        text-align: center;
+    }
+    .img__arrow{
+        display: none;
+    }
+   
+    
+}
+
+            /* MEDIA QUERIES (small screen) */
+
+@media screen and (max-width: 400px) {
+    .hero__wrapper{
+        height: 140vh;
+    }
+}
+
+
+            /* MEDIA QUERIES (small screen) */
+
+@media screen and (max-width: 380px) {
+    .hero__wrapper{
+        height: 180vh;
+    }
+
+    
+
+  
+
+   
+
+    
+
+    
+  
+}
+
