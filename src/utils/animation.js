@@ -88,7 +88,7 @@ export const fetureDescVariants = {
         opacity: 1,
         x: 0,
         transition:{
-            type: "easeIn",
+            type: "spring",
             duration: 1,
             delay: .7
         }
