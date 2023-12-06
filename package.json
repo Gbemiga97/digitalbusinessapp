@@ -1,4 +1,5 @@
 {
+  "homepage": "https://gbemiga97.github.io/digitalbusinessapp",
   "name": "digitalbusinessapp",
   "version": "0.1.0",
   "private": true,
@@ -6,7 +7,9 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "dependencies": {
     "eslint": "8.48.0",
@@ -18,5 +21,8 @@
     "react-icons": "^4.11.0",
     "react-scroll": "^1.8.9",
     "react-slick": "^0.29.0"
+  },
+  "devDependencies": {
+    "gh-pages": "^6.1.0"
   }
 }
